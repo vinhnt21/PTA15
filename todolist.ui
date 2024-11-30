@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>773</width>
+    <height>501</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="verticalLayoutWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>50</y>
+      <width>561</width>
+      <height>341</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QLabel" name="title">
+         <property name="font">
+          <font>
+           <family>Lucida Fax</family>
+           <pointsize>12</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Danh sách việc cần làm</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="add_task_btn">
+         <property name="text">
+          <string>Thêm nhiệm vụ</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QTableView" name="Table"/>
+       </item>
+       <item>
+        <widget class="QLabel" name="finish_task">
+         <property name="text">
+          <string>Đã hoàn thành: </string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="unfinish_task">
+         <property name="text">
+          <string>Chưa hoàn thành:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="remove_all_btn">
+         <property name="text">
+          <string>Xóa tất cả</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
