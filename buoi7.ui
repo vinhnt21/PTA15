@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>110</y>
+      <width>247</width>
+      <height>247</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QLabel" name="user_lb">
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    color: black; /* Màu chữ ban đầu là đen */
+    transition: color 0.5s; /* Hiệu ứng chuyển đổi mượt mà */
+}
+
+QLabel:hover {
+    color: qlineargradient(
+        spread: pad,
+        x1: 0, y1: 0, x2: 1, y2: 0,
+        stop: 0 red, 
+        stop: 0.16 orange, 
+        stop: 0.33 yellow, 
+        stop: 0.5 green, 
+        stop: 0.66 blue, 
+        stop: 0.83 indigo, 
+        stop: 1 violet
+    );
+}
+
+</string>
+       </property>
+       <property name="text">
+        <string>Tên đăng nhập</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="user_input">
+       <property name="styleSheet">
+        <string notr="true">QLineEdit {
+    color: black; /* Màu chữ mặc định */
+    border: 2px solid black; /* Viền mặc định */
+    padding: 5px; /* Khoảng cách bên trong */
+    border-radius: 5px; /* Bo tròn viền */
+}
+
+QLineEdit:focus {
+    border: 2px solid qlineargradient(
+        spread: pad,
+        x1: 0, y1: 0, x2: 1, y2: 0,
+        stop: 0 red,
+        stop: 0.16 orange,
+        stop: 0.33 yellow,
+        stop: 0.5 green,
+        stop: 0.66 blue,
+        stop: 0.83 indigo,
+        stop: 1 violet
+    );
+    outline: none; /* Loại bỏ hiệu ứng focus mặc định */
+}
+</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="pw_lb">
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    color: black; /* Màu chữ ban đầu là đen */
+    transition: color 0.5s; /* Hiệu ứng chuyển đổi mượt mà */
+}
+
+QLabel:hover {
+    color: qlineargradient(
+        spread: pad,
+        x1: 0, y1: 0, x2: 1, y2: 0,
+        stop: 0 red, 
+        stop: 0.16 orange, 
+        stop: 0.33 yellow, 
+        stop: 0.5 green, 
+        stop: 0.66 blue, 
+        stop: 0.83 indigo, 
+        stop: 1 violet
+    );
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Mật khẩu</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="pw_input">
+       <property name="styleSheet">
+        <string notr="true">QLineEdit {
+    color: black; /* Màu chữ mặc định */
+    border: 2px solid black; /* Viền mặc định */
+    padding: 5px; /* Khoảng cách bên trong */
+    border-radius: 5px; /* Bo tròn viền */
+}
+
+QLineEdit:focus {
+    border: 2px solid qlineargradient(
+        spread: pad,
+        x1: 0, y1: 0, x2: 1, y2: 0,
+        stop: 0 red,
+        stop: 0.16 orange,
+        stop: 0.33 yellow,
+        stop: 0.5 green,
+        stop: 0.66 blue,
+        stop: 0.83 indigo,
+        stop: 1 violet
+    );
+    outline: none; /* Loại bỏ hiệu ứng focus mặc định */
+}
+</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="loginBtn">
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 #0080ff, stop:1 #a0a0a0);
+    color: white;
+    font-weight: bold;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    padding: 10px 20px;
+    transition: border-color 0.5s ease-in-out; /* Animation transition for the border */
+}
+
+QPushButton:hover {
+    border-color: qconicalgradient(cx:0.5, cy:0.5, angle:0, stop:0 red, stop:0.16 orange, stop:0.33 yellow, stop:0.5 green, stop:0.66 blue, stop:0.83 indigo, stop:1 violet);
+}
+
+QPushButton:pressed {
+    background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 #0059b3, stop:1 #808080);
+    color: white;
+    border-color: qconicalgradient(cx:0.5, cy:0.5, angle:0, stop:0 violet, stop:0.16 indigo, stop:0.33 blue, stop:0.5 green, stop:0.66 yellow, stop:0.83 orange, stop:1 red);
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Đăng Nhập</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
